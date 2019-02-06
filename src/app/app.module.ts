@@ -19,6 +19,7 @@ import { MemoriaPage } from '../pages/memoria/memoria';
 import { RankingPage } from '../pages/ranking/ranking';
 import { PerfilPage } from '../pages/perfil/perfil';
 import { TutorialesPage } from '../pages/tutoriales/tutoriales';
+import { Pantalla2Page } from '../pages/pantalla2/pantalla2';
 
 
 
@@ -37,7 +38,8 @@ import { TutorialesPage } from '../pages/tutoriales/tutoriales';
     MemoriaPage,
     RankingPage,
     PerfilPage,
-    TutorialesPage
+    TutorialesPage,
+    Pantalla2Page
   ],
   imports: [
     BrowserModule,
@@ -58,7 +60,8 @@ import { TutorialesPage } from '../pages/tutoriales/tutoriales';
     MemoriaPage,
     RankingPage,
     PerfilPage,
-    TutorialesPage
+    TutorialesPage,
+    Pantalla2Page
   ],
   providers: [
     StatusBar,

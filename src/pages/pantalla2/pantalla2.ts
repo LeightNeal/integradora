@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
-import { Pantalla2Page } from '../pantalla2/pantalla2';
+import { MenuPage } from '../menu/menu';
 
 /**
- * Generated class for the MemoriaPage page.
+ * Generated class for the Pantalla2Page page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,23 +11,21 @@ import { Pantalla2Page } from '../pantalla2/pantalla2';
 
 @IonicPage()
 @Component({
-  selector: 'page-memoria',
-  templateUrl: 'memoria.html',
+  selector: 'page-pantalla2',
+  templateUrl: 'pantalla2.html',
 })
-export class MemoriaPage {
+export class Pantalla2Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     public alertCtrl:AlertController) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MemoriaPage');
+    console.log('ionViewDidLoad Pantalla2Page');
   }
 
-  
-
-  public ir2Pantalla(){
-    this.navCtrl.push(Pantalla2Page);
+  public irMenu(){
+    this.navCtrl.push(MenuPage);
   }
 
   showAlert() {
@@ -37,7 +35,7 @@ export class MemoriaPage {
       buttons: ['OK']
     });
     alert.present();
-    this.navCtrl.push(Pantalla2Page);
+    this.navCtrl.push(MenuPage);
   }
 
 }
